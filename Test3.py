@@ -1,0 +1,36 @@
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import urllib.request
+import requests  # pip install reguests
+
+driver = webdriver.Chrome()
+driver.get("https://www.nike.com/es/")
+driver.maximize_window()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[6]/div/div/div/div/div/section/div[2]/div/button").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[5]/div/div/footer/div/div[1]/div[1]/div/div[1]/div/ul/li[6]/button").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/div[2]/select").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/div[2]/select/option[3]").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/ul[2]/li[1]/a").click()
+time.sleep(1.5)
+driver.find_element(By.CSS_SELECTOR, "a[aria-label='1 out of 5 stars']").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/ul[3]/div[1]/textarea").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/ul[3]/div[1]/textarea").send_keys("Tu padre")
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/div[16]/select").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/div[16]/select/option[3]").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/ul[3]/div[1]/textarea").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/ul[5]/li[4]/a/label").click()
+time.sleep(1.5)
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div[2]/div[22]/input").click()
+time.sleep(5)
